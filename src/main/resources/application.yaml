@@ -1,0 +1,19 @@
+server:
+  port: 8087
+
+spring:
+  application:
+    name: query-service
+
+  cloud:
+    consul:
+      port: 9091
+      host: localhost
+
+  kafka:
+    bootstrap-servers: http://localhost:9092
+
+
+topics:
+  action: com.nikamicroservice.eventservice.event.aggregate.Action
+  ticket: yesustihneyeu.microservice.ticket.TicketEntity
